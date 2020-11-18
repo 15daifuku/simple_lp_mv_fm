@@ -8,311 +8,684 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"> -->
     <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
-    <title>出張―Airbnb</title>
+    <script src="js/desvg.js"></script>
+    <script>
+      window.addEventListener('load', function(){
+        deSVG('.desvg', true);
+      });
+    </script>
+    <title>Frog School｜海外でクリエイターを目指す人達を応援する学校</title>
   </head>
   <body>
     <section class="content">
 
-      <!-- <div class="container-fluid"> -->
-        <header class="container-fluid header">
-          
+      <div class="container-fluid header">
+        <!-- <header class="container-fluid header"> -->
+          <img src="src/bg-header.jpg" alt="">
           <!-- メイン画像 -->
           <div class="main_video">
-            <video id="video" src="src/airbnb_mv.mp4" muted loop></video>
-            <button id="video_btn">再生</button>
+            <video id="video" src="src/bg-video.mp4" autoplay muted loop></video>
           </div>
-          
-         
-          <!-- ナビゲーションバー -->
-          <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#"><i class="fab fa-airbnb fa-3x"></i></a>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">日本語</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-item nav-link" href="#">JPY</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-item nav-link" href="#">ホストをはじめる</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-item nav-link" href="#">ヘルプ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-item nav-link" href="#">登録する</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-item nav-link" href="#">ログイン</a>
-                </li>
-              </ul>
+          <div class="logo_podcast text-center">
+            <a href="https://school.frogagent.com/">
+              <svg class="school_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="width: 32px; height: 32px; opacity: 1;">
+                <g>
+                  <path class="st0" d="M362.625,190.484V56.172H149.344v134.313L0,190.797v265.031h210.969v-96.375h90.047v96.375H512V190.797
+                    L362.625,190.484z M105.188,404.484h-39.75V360.75h39.75V404.484z M105.188,292.563h-39.75v-43.75h39.75V292.563z M275.875,292.563
+                    h-39.766v-43.75h39.766V292.563z M256,180.719c-27.313,0-49.531-22.234-49.531-49.547c0-27.297,22.219-49.516,49.531-49.516
+                    s49.531,22.219,49.531,49.516C305.531,158.484,283.313,180.719,256,180.719z M446.563,404.484h-39.781V360.75h39.781V404.484z
+                     M446.563,292.563h-39.781v-43.75h39.781V292.563z"></path>
+                </g>
+              </svg>
+            </a>
+            <div class="podcast">
+              <a chref="https://frogagent.com/podcast/">ポッドキャスト</a>
             </div>
-          </nav>
-          <div class="contents">
-            <h1>世界の果てまで、アットホーム</h1>
-            <p><a href="">Airbnbビジネスプログラムの動画を見る</a></p>
-            <form action="#">
-              <label>まずは仕事用メールアドレスの入力から</label>
-              <div class="input_group">
-                <input id="input" type="email" class="form-control input_email" autocomplete="off">
-                <div class="input_button">
-                  <button id="submit" type="submit" class="btn btn-primary mb-2">メールアドレスを追加</button>
-                </div>
+          </div>
+          <div class="contents text-center">
+            <h2>Web制作＋英語 短期集中コース</h2>
+            <p>カナダ・バンクーバーでWeb制作と英語を身に着けよう！<br>Web制作も英語も勉強できる欲張りコースの登場です。</p>
+            <h4>次回開催予定についてはお問い合わせください</h4>
+            <a href="http://school.frogagent.com/#application-form" class="btn_square">お申し込み</a>
+          </div>
+        <!-- </header> -->
+      </div>
+
+      <!-- コース概要 -->
+      <div class="container-fluid">
+        <div class="row course_descs">
+          <div class="col-12 text-center">
+            <h2>コース概要</h2>
+          </div>
+          <div class="col-12 text-center">
+            <p>
+              『英語とWeb制作を同時に学びたい！』<br>
+              カナダ人講師による英会話講座に加え、海外で活動してきた現役の日系クリエイターが、<br>
+              海外で通用するWebデザイナーになるためのスキルをお伝えします！
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4 course_desc">
+            <img src="src/img-web.jpg" alt="">
+            <h4>Web制作講座</h4>
+            <p>長年海外でWeb制作者として活動してきた現役の講師が、Web制作の基礎を丁寧に説明します。</p>
+          </div>
+          <div class="col-sm-12 col-md-4 course_desc">
+            <img src="src/img-esl.jpg" alt="">
+            <h4>英会話講座</h4>
+            <p>カナダ人講師から実生活で使える英語を学びます。あなたの苦手分野を集中して克服しましょう。</p>
+          </div>
+          <div class="col-sm-12 col-md-4 course_desc">
+            <img src="src/img-meeting.jpg" alt="">
+            <h4>ミートアップ</h4>
+            <p>バンクーバーで活躍するあらゆるクリエイターが集まり、情報交換を行っています。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- バンクーバーってどんな街？ -->
+      <div class="container-fluid">
+        <div class="row vancouver d-flex justify-content-center">
+          <div class="col-lg-12">
+            <div class="vancouver_text">
+              <h2>バンクーバーってどんな街？</h2>
+              <p>バンクーバーは留学初心者向けだと言われています。日本人はバンクーバーのあるブリティッシュ・コロンビア州の人口の1%程度存在し、エコノミスト・インテリジェント・ユニットの世界一住みやすい都市には幾度となく選ばれ、治安、インフラ、教育、文化など全ての面で高評価を得ています。特に安全性、治安における評価が非常に高く、重犯罪の発生率が極端に低い街として知られています。</p>
+              <p>また、世界のIT産業のメッカであるシリコンバレーとも時差が同じく連携が取りやすく、コンピューター・グラフィックスの祭典『Siggraph』の開催都市に2011年・2014年・2018年の3度選ばれるなど、クリエイターにとって、世界に注目されている実績やその根拠を体感出来る街、それがバンクーバーなのです。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- カリキュラム -->
+      <div class="container">
+        <div class="row curriculum">
+          <div class="col-12 text-center">
+            <h2>カリキュラム</h2>
+          </div>
+          <!-- Web制作講座 -->
+          <div class="col-12 text-center">
+            <h3>Web制作講座</h3>
+          </div>
+          <div class="col-12">
+            <p>未経験から海外就職への第一歩をスキル + 英語を共に伸ばすことを目的とした「Web制作＋英語 短期集中コース」のWeb制作者用カリキュラムになります。（Web制作レッスンに関しては全て日本語で行なわれます）バンクーバー在住者向けの料金プランもご用意しておりますので詳細は料金一覧をご覧下さい。<br>
+             <span>※ 誠に申し訳ございませんが、定員人数に到達次第、お申し込みを閉め切らせていただきます。</span> </p>
+            <p>カリキュラムは日本でもWeb／モバイルデベロッパーとして活躍した後、
+              Frogを利用し留学後現地企業にてエンジニアとしての就職を果たし、
+              現在はFrog/COSにてシステムエンジニアとして働く大上と、ブログ「<a href="http://webya.opdsgn.com/">バンクーバーのうぇぶ屋</a>」で海外の制作ツールなどを日本に紹介し続けてきたFrog代表セナが考案したFrogオリジナルの教材を使用します。また講座で使用する素材も全て独自の物をご用意。コース終了後はご自身の今後のWeb制作物のテンプレートとしてご使用いただいて構いません。</p>
+            <p>日本からバンクーバーに渡り、今も北米のIT業界で活躍する日本人Webクリエーターの二人が、「未経験者が海外就職を視野に入れたWebデザイナーになるにどうすれば良いか？」を追求した結果、生み出された独自のカリキュラムです。Webサイト制作の基礎と技術を同時に学び、ここバンクーバーからIT業界へチェンジしてみませんか？</p>
+          </div>
+          <!-- HTML・CSS -->
+          <div class="curriculum_descs">
+            <div class="curriculum_desc">
+              <img src="src/img-coding.svg" alt="">
+              <div class="ccurriculum_text">
+                <h4>HTML・CSS</h4>
+                <p>Webサイト制作で必須のHTMLとCSSというコーディングの基礎を勉強します</p>
               </div>
-              <div class="pt-3">
-                出張管理をご担当ですか？<a href="https://www.airbnb.jp/companies">もっと詳しく</a> >
+            </div>
+            <!-- Webデザイン -->
+            <div class="curriculum_desc">
+              <img src="src/img-design.svg" alt="">
+              <div class="ccurriculum_text">
+                <h4>Webデザイン</h4>
+                <p>グラフィックツールとして広く利用されているPhotoshopやXDを利用し、Webサイトのデザインをします</p>
+              </div>
+            </div>
+            <!-- Webサイトを公開 -->
+            <div class="curriculum_desc">
+              <img src="src/img-website.svg" alt="">
+              <div class="ccurriculum_text">
+                <h4>Webサイトを公開</h4>
+                <p>実際にWebサイトを制作し、Wordpressを利用し更新環境を整備</p>
+              </div>
+            </div>
+            <!-- 基礎的なプログラミング -->
+            <div class="curriculum_desc">
+              <img src="src/img-email.svg" alt="">
+              <div class="ccurriculum_text">
+                <h4>基礎的なプログラミング</h4>
+                <p>JavaScriptやPHP等を利用し、簡単なプログラミングをマスターしよう</p>
+              </div>
+            </div>
+          </div><!-- div.curriculum_descs -->
+        </div><!-- div.row curriculum -->
+
+        <!-- コース内容 -->
+        <div class="row course">
+          <div class="course_details">
+            <div class="course_detail">
+              <p><b>コース内容</b></p>
+              <table border="1">
+                <tbody>
+                  <tr>
+                    <td width=10%>Day 1</td>
+                    <td>PhotoshopやXDを使って、まずはウェブサイトの骨組みをデザインしてみよう</td>
+                  </tr>
+                  <tr>
+                    <td>Day 2</td>
+                    <td>HTML、CSS、JavaScript(jQuery) など、それぞれの仕組みを知り、利用しよう</td>
+                  </tr>
+                  <tr>
+                    <td>Day 3</td>
+                    <td>Wordpressで自分のブログを作ろう／Gitについて知っておこう</td>
+                  </tr>
+                  <tr>
+                    <td>Day 4</td>
+                    <td>Wordpressテーマの自作に挑戦しよう</td>
+                  </tr>
+                  <tr>
+                    <td>Day 5</td>
+                    <td>JavaScriptでフォームチェックを実装し、JavaScriptを使いこなそう</td>
+                  </tr>
+                  <tr>
+                    <td>Day 6</td>
+                    <td>Wordpress次のステップへ向けての目標を持とう（Analytics, React, 自動テスト, ホワイトボードテストなどの紹介）</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div><!-- div.row course -->
+
+        <div class="row schedule">
+          <!-- 2週間のスケジュール -->
+          <div class="schedule_details">
+            <div class="schedule_detail">
+              <p><b>2週間のスケジュール</b></p>
+              <table border="1">
+                <tbody>
+                  <tr width=20%>
+                    <td><b>月</b></td>
+                    <td><b>火</b></td>
+                    <td><b>水</b></td>
+                    <td><b>木</b></td>
+                    <td><b>金</b></td>
+                    <td><b>土</b></td>
+                    <td><b>日</b></td>
+                  </tr>
+                  <tr>
+                    <td>英会話<br>レッスン</td>
+                    <td>Web制作（1）</td>
+                    <td>英会話<br>レッスン</td>
+                    <td>Web制作（2）</td>
+                    <td>英会話<br>レッスン</td>
+                    <td>Web制作（3）</td>
+                    <td>フリー</td>
+                  </tr>
+                  <tr>
+                    <td><b>月</b></td>
+                    <td><b>火</b></td>
+                    <td><b>水</b></td>
+                    <td><b>木</b></td>
+                    <td><b>金</b></td>
+                    <td><b>土</b></td>
+                    <td><b>日</b></td>
+                  </tr>
+                  <tr>
+                    <td>英会話<br>レッスン</td>
+                    <td>Web制作（4）</td>
+                    <td>英会話<br>レッスン</td>
+                    <td>Web制作（5）</td>
+                    <td>英会話<br>レッスン</td>
+                    <td>Web制作（6）</td>
+                    <td>フリー</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>※開催日程は8月6日〜19日、及び8月20日〜9月2日のいずれかよりお選びいただけます。</p>
+            </div><!-- div.schedule_detail -->
+          </div>
+        </div>
+
+        <div class="row en_course">
+          <!-- 英会話講座 -->
+          <div class="col-12 text-center">
+            <h4>英会話講座</h4>
+          </div>
+          <div class="en_course_desc">
+            <img src="src/eh-plus.png" alt="">
+            <div class="en_course_text"> <!-- 中央寄せのためのセレクタ -->
+              <p>英会話は効果的な英語の学習方法を追求して生まれたカンバセーションスクール「Eh+」にて英会話を勉強します。すべての授業予約、ノートテイク、課題、自主学習等はすべてオンラインで行えます。「Conversation（会話）」「Listening（聞き取り）」「Vocabulary（語彙）」「Pronunciation（発音）」にわかれたクラスを自分でオンラインから予約して受講できるので、一般のカンバセーションとは違い、自分の弱い部分を集中して克服できます。 また、すべてのクラスにおいて、その日のノートや単語集、課題、自主学習用のリソース等も自身のオンラインアカウントに蓄積されていくため、独学でもさらに学習を深めていけるでしょう。</p>
+            </div>
+          </div><!-- div.en_course_desc -->
+        </div><!-- div.row en_course -->
+      </div>
+
+      <!-- バンクーバーで見つける、新しい自分。 -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 find_yourself">
+            <div class="find_yourself_txt text-center">
+              <h2>バンクーバーで見つける、新しい自分。</h2>
+              <a href="http://school.frogagent.com/#application-form" class="btn_square">お申し込み</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 受講者の声 -->
+      <div class="container">
+        <div class="row experiences">
+          <div class="col-12">
+            <h2>受講者の声</h2>
+          </div>
+          <!-- Juliaさん -->
+          <div class="experiences_desc col-12">
+            <div class="experiences_img">
+              <img src="src/yuria.jpg" alt="">
+              <p>Juliaさん</p>
+            </div>
+            <div class="experiences_text"> <!-- 中央寄せのためのセレクタ -->
+              <p>Webのレッスンは10人以下と少人数であり、かつ要望に合わせた内容調整を都度行なっていただけたため、 ピンポイントで学びたかったことが学べました。今回幅広くWebデザインの概要を知り、 これからスキルアップしていくための基盤を作ることができたのが一番の収穫です。</p>
+              <p>また惜しみなく知識や経験談を提供くださったので、自分の将来についても具体的に考えることができました。 実際のバンクーバーの制作現場事情について、一連の流れなどもっと詳しく聞きたかったです。 1ヶ月では少し物足りないですが、名残惜しくてもう一度来たくなりちょうどいいかもと思いました。 3ヶ月になるともういいかなと思えそうですし。</p>
+              <p>8月は寒い日もありましたがとても最高でした！</p>
+            </div>
+          </div><!-- div.experiences_desc -->
+
+          <!-- Takaさん -->
+          <div class="experiences_desc col-12">
+            <div class="experiences_img">
+              <img src="src/taka.jpg" alt="">
+            </div>
+            <div class="experiences_text"> <!-- 中央寄せのためのセレクタ -->
+              <p>今回の短期プランの間は初めてのことばっかりでした。バンクーバーの街は自然が多く綺麗で、いい人が多くて初海外でも問題なく過ごせました。Webの授業はカリキュラムがしっかりしていて、身に付いたと思います。</p>
+              <p>時間があっという間に過ぎて、帰りたくなくなりました。またバンクーバーへ行きたいと思います。</p>
+              <p>講師のお二人には8回の授業の中で色んなことを教えていただきました。お二方とも、webの力を身につけて帰ってもらおうという姿勢が伝わってきました。僕の人生でもいい分岐点になったと思います。ありがとうございました！</p>
+            </div>
+          </div><!-- div.experiences_desc -->
+
+          <!-- Sayakaさん -->
+          <div class="experiences_desc col-12">
+            <div class="experiences_img">
+              <img src="src/kagawa_icn.png" alt="">
+            </div>
+            <div class="experiences_text"> <!-- 中央寄せのためのセレクタ -->
+              <p>Webについて<br>
+                前半の方はhtml,CSS,Photoshopは学校である程度勉強していたこともあり、割とさくさく進みました。しかしその中でも知らなかった効率アップのための方法などを知ることができたのは勉強になりました。後半プログラムに入ってからは、新しく覚えることが多く、また今回のプランを知る前から学びたいと思っていたので楽しかったです。講座中、軽い小話を挟んでくださったおかげで、リラックスした環境で勉強することができました。</p>
+              <p>英語について<br>
+                Eh+は先生が皆優しく授業外でも楽しくすごすことができました。英語の勉強だけでなく、そこで出会った様々な国の方と友達になることができたのが良かったです。やはりある程度勉強していればもっと伸びることができたんだろうなと感じました。授業自体は少人数で行われるため、置いていかれることなくきっちり見てくださいました。</p>
+            </div>
+          </div><!-- div.experiences_desc -->
+          
+          <!-- Aoiさん  -->
+          <div class="experiences_desc col-12">
+            <div class="experiences_img">
+              <img src="src/aoi.jpg" alt="">
+            </div>
+            <div class="experiences_text"> <!-- 中央寄せのためのセレクタ -->
+              <p>期待通りの充実したプログラムでした。webデザインは初心者で、ついていくのが精一杯でしたが、html/photoshop/phpなど、短期間で様々な言語やツールに触れることができたので、webデザインにおいてどんなことを勉強していくのか概要が掴めたのが良かったです。また、質問した際にはマンツーマンの形で対応していただけるので安心感がありました。<br>
+                また、webデザインの授業は週２で固定、英語の授業は個人でスケジュールを組める、など自由度も高く、勉強以外にも観光したり友達を作ったりと夏のバンクーバーを楽しめました。<br>
+                バンクーバーでの留学/ワークビザ/永住権についてなど、なかなか得られない情報を惜しみなく提供していただけたのも、大きな収穫でした。実際に渡航して現地の専門学校で勉強している方たちとお話しすることができ、よりイメージが湧いたのも良かったです。</p>
+            </div>
+          </div><!-- div.experiences_desc -->
+
+          <!-- Kaoriさん -->
+          <div class="experiences_desc col-12">
+            <div class="experiences_img">
+              <img src="src/kaori.jpg" alt="">
+            </div>
+            <div class="experiences_text"> <!-- 中央寄せのためのセレクタ -->
+              <p>業界未経験の私にとっては一部ついていけない所もあり少しレベルが高いと感じました。<br>
+                しかし、Webの知識を短期間で詰め込むことが出来て、構造やしくみなどが全く分からず知識０から一気にレベルアップを実感出来ました。</p>
+              <p>カリキュラムの中で私のような初心者には絶対にわからないWeb制作現場での話や、これから何が必要で何が求められているのか、そして勉強方法が知れたのは今後のビジョンを描くのにも大変助かりました。</p>
+              <p>今回１ヶ月間と言う短期でしたが、飛躍的にスキルアップが出来てもっと勉強したいという意欲が高まりました。受講して本当に良かったです。</p>
+            </div>
+          </div><!-- div.experiences_desc -->
+
+          <!-- コノミさん -->
+          <div class="experiences_desc col-12">
+            <div class="experiences_img">
+              <img src="src/konomi.jpg" alt="">
+            </div>
+            <div class="experiences_text"> <!-- 中央寄せのためのセレクタ -->
+              <p>少しでもWeb制作の裏側を理解して発注側からも攻めるWebコンテンツ作りができるようになれればと思い参加しました。それぞれの言語の役割や機能、考え方や関係性などを丁寧にかみ砕いて理解できるまで教えてもらえたので、今まで独学で行き詰まっていたことが一連の制作過程を教わる中でやっと紐づけられたようでスッキリしました。特に後半の怒涛のWebツール紹介やWordPressについてはすぐ実践できそうな内容だったのでありがたかったです。</p>
+              <p>英語のスクールはWeb制作のプログラムと調整ができ通いやすかったです。ただ授業内容や先生によっては説明の言い回しが難しかったりで、英語オンチな私は少し大変でした。それも訓練かと思えば楽しかったですが。1ヶ月とにかく肉厚なプログラムだったので、とても短く感じました。</p>
+              <p>Webも英語もFrogのプログラムで学べて良かったと思います。良すぎて人に教えたくない居酒屋みたいな感じだなぁと思いました。この次の段階のプログラムがあればぜひまた受講したいくらいです！</p>
+            </div>
+          </div><!-- div.experiences_desc -->
+
+          <!-- nayo74さん -->
+          <div class="experiences_desc col-12">
+            <div class="experiences_img">
+              <img src="src/nayo74.jpg" alt="">
+              <p>nayo74さん</p>
+            </div>
+            <div class="experiences_text"> <!-- 中央寄せのためのセレクタ -->
+              <p>webのデザインでの経験はあるものの、フロントエンド面での知識が乏しい点もあり参加しました。結果、新たな発見や自身の課題点も見え、本当に充実した期間だったと思います。</p>
+              <p>特にWPやPHPの授業では、ロジックをしっかりと理解した上で実践できたので、今まで曖昧に理解してたり、挫折してた点がすんなりと解消されました。効率のよい作業ポイントやWebサービスの紹介など、日本以外でのweb制作の目線からみた情報を教えていただいたのも、興味深かったです。</p>
+              <p>短い期間でしたが、毎回学ぶことが多くて楽しくて仕方なかったです。今回学んだことを復習しつつ、自分自身への新たな成長にプラスさせたいと思います。本当にありがとうございました！（引き続きよろしくお願いします。）</p>
+            </div>
+          </div><!-- div.experiences_desc -->
+        </div>
+      </div>
+
+      <!-- 講師紹介 -->
+      <div class="container-fluid teach_color">
+        <div class="row teachers text-center">
+          <div class="col-12">
+            <h2>講師紹介</h2>
+            <p>常に第一線で活躍を続ける現役クリエイターからの最新技術が学べます</p>
+          </div>
+          <!-- Yoshitaka Senna Goto さん -->
+          <div class="teacher col-4">
+            <img src="src/senna.jpg" alt="">
+            <h4>Yoshitaka Senna Goto</h4>
+            <p>印刷会社に勤務した後、Web業界へ転向。都内の制作会社勤務を経てバンクーバーへ留学。その後、バンクーバーのIT業界急成長に可能性を感じ、長期滞在を決意。現在は永住権を獲得し、フリーランス、起業、シェアハウス運営と、幅広く活動中。バンクーバー生活6年目。バンクーバーで始めたブログ「<a href="http://webya.opdsgn.com/">バンクーバーのうぇぶ屋</a>」は日本国内のWebデザイナー向けブログとして人気を博し、現在に至る。Web制作者歴は10年。</p>
+          </div>
+
+          <!-- Ryohei Oue(chan_gami) さん -->
+          <div class="teacher col-4">
+            <img src="src/changami.jpg" alt="">
+            <h4>Yoshitaka Senna Goto</h4>
+            <p>Vancouverの専門学校ITD CanadaのGame Development Programを卒業し、現地企業でエンジニアとしての就職を経た後COS（Frog提携留学エージェント）へ入社。ITD在校時は未経験者に学校外でプログラミングを教えていた経験もあり、未経験者サポートの重要性の理解と、教え方には定評がある。現地就職者の多いFrog Memberからも技術力で一目置かれる存在。(<a href="https://twitter.com/chan_gami">Twitter</a>, <a href="https://www.changami.com/">Blog</a>)</p>
+          </div>
+
+          <!-- Hideto Yasunori さん -->
+          <div class="teacher col-4">
+            <img src="src/hideto.jpg" alt="">
+            <h4>Hideto Yasunori</h4>
+            <p>IT業界未経験からVancouverに渡り、1年間の専門学校修了後に現地のソフトウェア系スタートアップ企業にエンジニアとして就職。現地就職希望者に向けた「ポートフォリオ講座」や「履歴書講座」を持つなど、未経験から現地就職を果たした視点でメンバーへのサポートを精力的に行っている。「Frogメンバーの健康は俺が守る！」を合言葉にパーソナルトレーナーとしても活動中。北米の滞在歴は計5年。 (<a href="https://twitter.com/VancouBoys">Twitter</a>, <a href="https://webdev-bodymake.com/">Blog</a>)</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 受講までのステップ -->
+      <div class="container">
+        <div class="row steps">
+          <div class="col-12 text-center">
+            <h2>受講までのステップ</h2>
+          </div>
+          <div class="step">
+            <ul>
+              <!-- 1.お申し込みフォーム入力 -->
+              <li>
+                <h3>お申し込みフォーム</h3>
+                <p>下記の<a href="http://school.frogagent.com/#application-form">お申し込みフォーム</a>よりお気軽にお問い合わせください。</p>
+              </li>
+              <li>
+              <!-- 2.カウンセリング -->
+              <h3>カウンセリング</h3>
+                <p>現状のスキルレベル、英語力等をお聞かせいただき、渡航のステップを含め一度スカイプを通してカウンセリングいたします。</p>
+              </li>
+              <!-- 3.渡航までの流れをご案内 -->
+              <li>
+                <h3>渡航までの流れをご案内</h3>
+                <p>渡航日の設定、渡航後の流れ、ホームステイの斡旋等、現地に到着されてからの流れを一度細かくご説明いたします。</p>
+              </li>
+              <!-- 4.お振り込み／準備開始 -->
+              <li>
+                <h3>お振り込み／準備開始</h3>
+                <p>レッスンの受講やホームステイ等の費用をお振り込みいただき、渡航準備に入ります。</p>
+              </li>
+              <!-- 5.準備完了 -->
+              <li>
+                <h3>準備完了</h3>
+                <p>ホームステイのご紹介、医療保険の加入、旅券の購入等をご案内させていただき、準備完了です！</p>
+              </li>
+              <!-- 6.渡航／オリエンテーション -->
+              <li>
+                <h3>渡航／オリエンテーション</h3>
+                <p>ご到着後空港に送迎車が待機しておりますので、そのまま弊社オフィスへ。その後初日は簡易オリエンテーションを行います。2週間のWebデザイナー留学生活をお楽しみください！</p>
+              </li>
+            </ul>
+            <!-- お申し込み期限 -->
+          </div>
+          <div class="step_limit">
+            <span>※お申し込み期限は7月20日まで（申し込み状況によって変更する場合もございます。） ※バンクーバーに滞在中からのお申し込みもお待ちしております。その場合、ホームステイ費用や携帯、保険などの諸経費を引いた金額をご連絡いたしますので、お問い合わせください。</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 自信を持って帰国しよう。 -->
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-12 return text-center">
+            <div class="return_txt">
+              <h2>自信を持って帰国しよう。</h2>
+              <p><a href="http://school.frogagent.com/#application-form" class="btn_square">お申し込み</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- これから必要とされるのは、グローバルに活躍できるあなた -->
+      <div class="container">
+        <div class="row">
+          <div class="global">
+            <h2>これから必要とされるのは、<br>
+              グローバルに活躍できるあなた</h2>
+            <audio controls="controls" preload="none">
+              <source src="https://school.frogagent.com/wp-content/themes/frog-school/audio/FrogPodcast-vol1-5.mp3" type="audio/mpeg">
+            </audio>
+            <p>Frog Schoolでは実際に海外で活躍しているクリエイターや、海外での就労経験を重視している企業のインタビューを公開しています。第一弾はFrogのSennaとManaによる、日本と海外の違い・Frog Schoolについてのお話です。</p>
+            <a href="https://frogagent.com/podcast/">ポッドキャスト一覧ページへ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 料金 -->
+      <div class="container-fluid price">
+        <div class="row prices">
+          <div class="col-12 text-center">
+            <h2>料金</h2>
+          </div>
+          <div class="price_lists">
+            <div class="price_list">
+              <table border="1">
+                <tbody>
+                  <tr class="green"><th>日本在住者向け</th></tr>
+                  <tr class="green"><th><p><span>22</span> 万円</p></th></tr>
+                  <tr class="on"><th><p>Web制作講座の受講料</p></th></tr>
+                  <tr class="on"><th><p>英会話講座の受講料</p></th></tr>
+                  <tr class="on"><th><p>ホームステイ（食費含む）</p></th></tr>
+                  <tr class="on"><th><p>空港からの送迎</p></th></tr>
+                  <tr class="on"><th><p>交通費(バス／電車パス)</p></th></tr>
+                  <tr class="on"><th><p>医療保険</p></th></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="price_list">
+              <table border="1">
+                <tbody>
+                  <tr class="green"><th>バンクーバー在住者向け</th></tr>
+                  <tr class="green"><th><p>CA$ <span>1,500</span></p></th></tr>
+                  <tr class="on"><th><p>Web制作講座の受講料</p></th></tr>
+                  <tr class="on"><th><p>英会話講座の受講料</p></th></tr>
+                  <tr class="off"><th><del><p>ホームステイ（食費含む）</p></del></th></tr>
+                  <tr class="off"><th><del><p>空港からの送迎</p></del></th></tr>
+                  <tr class="off"><th><del><p>交通費(バス／電車パス)</p></del></th></tr>
+                  <tr class="off"><th><del><p>医療保険</p></del></th></tr>  
+                </tbody>
+              </table>
+            </div>
+            <div class="price_list">
+              <table border="1">
+                <tbody>
+                  <tr class="green"><th>バンクーバー在住者向け</th></tr>
+                  <tr class="green"><th><p>CA$ <span>1,000</span></p></th></tr>
+                  <tr class="on"><th><p>Web制作講座の受講料</p></th></tr>
+                  <tr class="off"><th><del><p>英会話講座の受講料</p></del></th></tr>
+                  <tr class="off"><th><del><p>ホームステイ（食費含む）</p></del></th></tr>
+                  <tr class="off"><th><del><p>空港からの送迎</p></del></th></tr>
+                  <tr class="off"><th><del><p>交通費(バス／電車パス)</p></del></th></tr>
+                  <tr class="off"><th><del><p>医療保険</p></del></th></tr>  
+                </tbody>
+              </table>
+            </div>  
+          </div>
+          <div class="col-12 text-center price_txt">
+            <p>※ノートパソコンが必要です ※Windowsでも受講可 ※航空券は含まれておりません</p> 
+          </div>
+        </div>
+      </div>
+
+
+      <!-- よくある質問 -->
+      <div class="container">
+        <div class="row faqs">
+          <div class="col-12 text-center">
+            <h2>よくある質問</h2>
+          </div>
+          <div class="faq col-12">
+            <h3>英語を学んだことがない素人でも参加できますか？</h3>
+            <p>ご参加くださる方の大半は、英語、海外経験、Webサイト制作／デザインスキルをこれから伸ばす方を対象としておりますので、ご参加においては問題ありません。英会話の面については、ご自分で伸ばしたい分野を「Conversation（会話）」「Listening（聞き取り）」「Vocablary（語彙）」「Pronuciation（発音）」のいづれかから選択できるため、自分に足りていないという部分を強化できます。また、海外生活の中で英語に触れていく中で、自分が必要だと思う部分を認識することより、今後の語学学習にも役立てていただければと考えています。</p>
+          </div>
+          <div class="faq col-12">
+            <h3>Web制作の知識がまったくないので、ついていけるか不安です。</h3>
+            <p>Web制作についても同様に、現地のWeb制作学校でカリキュラムアドバイザーを務めるTimmyと、長年Webディレクターに携わってきたSennaの二名体制で基礎知識から説明いたします。日本とカナダでWeb制作者として活動してきた経験を持って、初めてWeb制作に携わる方がWebサイトを作れるようになるまでを目標としてカリキュラムを組んでおりますので、安心してご参加ください。            </p>
+          </div>
+          <div class="faq col-12">
+            <h3>Web制作講座では具体的にどの程度のレベルから始まって、どこまでできるようになりますか？</h3>
+            <p>基本的には週3日、各6〜7時間ずつの時間の中で、基本的なWebサイト制作に関する授業、現地のミートアップで現地クリエイターとの交流や、スポットで講師として入っていただくクリエイターからの技術講座を予定しております。Frogには、Web制作のプロとして日本のみならず世界で活躍するクリエイター達が集まる場としてこの3年で構成してきましたので、私達から提供するHTML、CSS等の基礎はもちろん、ワイヤーフレーム（Webサイトの構成）からデザイン、更には要望に合わせてできる限り多くの物を吸収していただければと思っています。</p>
+          </div>
+          <div class="faq col-12">
+            <h3>ホームステイではどのようなところに住むことになりますか？</h3>
+            <p>留学期間中の2週間は、バンクーバーにあるホストファミリー宅にて、ホームステイ生活を送っていただきます。ホームステイでは、英語を使ってコミュニケーションを取りますので、海外の生活をご家庭の中からでも体験できます。ホームステイの選抜に関しては、事前にホストファミリーに関するご要望をヒアリングいたします。その後こちらで実際に足を運び、選抜したステイ先をご紹介いたします。基本的には、異文化交流を目的とするため、日本人のいない環境をご用意できるよう配慮いたしますが、お申し込みいただく時期によってはその限りでは無い場合もございます。お申し込みは、少なくともホームステイ開始(カナダ到着)の2週間前までに完了していただきます。開始までに日数が少ない場合は、ご紹介できるファミリーに限りがあることがございますので、ご了承ください。</p>
+          </div>
+          <div class="faq col-12">
+            <h3>医療保険について教えてください。</h3>
+            <p>弊社提携の現地保険会社Bridges International Insurance Servicesが提供する留学生用保険をご案内しております。医療のみが補償対象で、盗難や物損などは対象外です。物損や盗難等に関する保険もご要望の場合は、別途追加料金でご案内できますので、ご相談ください。詳細はお申し込み時にご説明いたします。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- お申し込み／お問い合わせ -->
+      <div class="container-fluid req_inq">
+        <div class="row req_inq_box">
+          <div class="col-8 offset-2 text-center input_group">
+            <h2>お申し込み／お問い合わせ</h2>
+            <p>申し込みは以下のフォームをご入力いただき、送信ボタンを押してください。
+              お問い合わせもお待ちしております。</p>
+            <form>
+              <div class="form_group">
+                <label for="formGroupNameInput">お名前（必須）</label>
+                <input type="text" class="form-control" id="formGroupNameInput" placeholder="お名前">
+              </div>
+              <div class="form_group">
+                <label for="formGroupMailInput">メールアドレス (必須)</label>
+                <input type="text" class="form-control" id="formGroupMailInput" placeholder="メールアドレス">
+              </div>
+              <div class="form_group">
+                <label for="formGroupSkypeInput">スカイプID</label>
+                <input type="text" class="form-control" id="formGroupSkypeInput" placeholder="スカイプID">
+              </div>
+              <div class="form_group">
+                <label for="formGroupJobInput">職種</label>
+                <input type="text" class="form-control" id="formGroupJobInput" placeholder="職種">
+              </div>
+              <div class="form_group">
+                <label for="formGroupAddressInput">居住地</label>
+                <select type="text" class="form-control" id="formGroupAddressInput">
+                  <option value="1" selected="selected">北海道</option>
+                  <option value="2">青森県</option>
+                  <option value="3">岩手県</option>
+                  <option value="4">宮城県</option>
+                  <option value="5">秋田県</option>
+                  <option value="6">山形県</option>
+                  <option value="7">福島県</option>
+                  <option value="8">茨城県</option>
+                  <option value="9">栃木県</option>
+                  <option value="10">群馬県</option>
+                  <option value="11">埼玉県</option>
+                  <option value="12">千葉県</option>
+                  <option value="13">東京都</option>
+                  <option value="14">神奈川県</option>
+                  <option value="15">新潟県</option>
+                  <option value="16">富山県</option>
+                  <option value="17">石川県</option>
+                  <option value="18">福井県</option>
+                  <option value="19">山梨県</option>
+                  <option value="20">長野県</option>
+                  <option value="21">岐阜県</option>
+                  <option value="22">静岡県</option>
+                  <option value="23">愛知県</option>
+                  <option value="24">三重県</option>
+                  <option value="25">滋賀県</option>
+                  <option value="26">京都府</option>
+                  <option value="27">大阪府</option>
+                  <option value="28">兵庫県</option>
+                  <option value="29">奈良県</option>
+                  <option value="30">和歌山県</option>
+                  <option value="31">鳥取県</option>
+                  <option value="32">島根県</option>
+                  <option value="33">岡山県</option>
+                  <option value="34">広島県</option>
+                  <option value="35">山口県</option>
+                  <option value="36">徳島県</option>
+                  <option value="37">香川県</option>
+                  <option value="38">愛媛県</option>
+                  <option value="39">高知県</option>
+                  <option value="40">福岡県</option>
+                  <option value="41">佐賀県</option>
+                  <option value="42">長崎県</option>
+                  <option value="43">熊本県</option>
+                  <option value="44">大分県</option>
+                  <option value="45">宮崎県</option>
+                  <option value="46">鹿児島県</option>
+                  <option value="47">沖縄県</option>
+                  <option value="48">日本国外</option>
+                </select>
+              </div>
+              <div class="form_group">
+                <label for="formGroupPlanInput">興味のあるプラン</label>
+                <select type="text" class="form-control" id="formGroupPlanInput">
+                  <option value="1" selected="selected">Web制作＋英語＋バンクーバー留学</option>
+                  <option value="2">Web制作＋英語（現地滞在者向け）</option>
+                  <option value="3">Web制作（現地滞在者向け）</option>
+                </select>
+              </div>
+              <div class="form_group">
+                <label for="formGroupCourseInput">希望の受講時期 </label>
+                <select type="text" class="form-control" id="formGroupCourseInput">
+                  <option value="1" selected="selected">2018年12月</option>
+                  <option value="2">2019年3月</option>
+                  <option value="3">2019年5月</option>
+                  <option value="3">2019年8月</option>
+                </select>
+                <p>※参加人数が一定に達さない場合、開催を見送らせて頂きます。</p>
+              </div>
+              <div class="form_textarea">
+                <label for="formGroupMassegeInput">メッセージ／ご質問</label>
+                <textarea name="formGroupMassegeInput" rows="8" cols="60" id="formGroupMassegeInput"></textarea>
               </div>
             </form>
-
-          </div>
-        </header>
-      <!-- </div> -->
-
-      <!-- ヘッダー～リンク集 -->
-      <div class="main">
-        <div class="container-fluid">
-          <!-- 最高の仕事に必要なものすべてを完備 -->
-          <div class="row">
-
-          </div>
-          <div class="row airbnb_descs">
-            <div class="col-12 d-flex justify-content-center">
-              <h2>
-                最高の仕事に必要なものすべてを完備
-              </h2>
-            </div>
-            <div class="col-sm-4 airbnb_desc">
-              <img src="src/top_rated_homes.jpg" alt="">
-              <p>高評価の宿泊先＆デザイナーズホテル</p>
-            </div>
-            <div class="col-sm-4 airbnb_desc">
-              <img src="src/team_building_experiences.jpg" alt="">
-              <p>チームビルディング体験</p>
-            </div>
-            <div class="col-sm-4 airbnb_desc">
-              <img src="src/collaborate.jpg" alt="">
-              <p>コラボを育むスペース</p>
-            </div>
-          </div>
-
-          <!-- 画像＋説明 -->
-          <div class="row img_desc">
-            <!-- 画像＋説明１ -->
-            <div class="col-12 img_descs">
-              <div class="img_img1 mr-3">
-                <img src="src/comfort_home.jpg" alt="">
-              </div>
-              <div class="img_desc1">
-                <div class="img_desc_text"> <!-- 中央寄せのためのセレクタ -->
-                  <h2>出張先でも、アットホーム</h2>
-                  <p>出張のときも、新天地に異動のときも安心。他の出張者が5つ星評価をつけたお部屋やデザイナーズホテルを探しましょう。</p>
-                  <a href="https://www.airbnb.jp/s/homes?refinement_paths[]=homes&work_trip=true" target="_blank">仕事用スペースを完備した宿泊先を検索</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- 画像＋説明２ -->
-            <div class="col-12 img_descs">
-              <div class="img_desc2 mr-3">
-                <div class="img_desc_text"> <!-- 中央寄せのためのセレクタ -->
-                  <h2>チームの心をひとつに</h2>
-                  <p>ラーメン作り教室やカヌーレッスンに参加。普段オフィスでは目にできない同僚たちの意外な面に触れ、深いレベルでつながれます。</p>
-                  <a href="https://www.airbnb.jp/d/onlineexperiencesforteams">Airbnbの「体験」を検索</a>
-                </div>
-              </div>
-              <div class="img_img2">
-                <img src="src/team_building_made_easy.jpg" alt="">
-              </div>
-            </div>
-
-            <!-- 画像＋説明３ -->
-            <div class="col-12 img_descs">
-              <div class="img_img1 mr-3">
-                <img src="src/creativity.jpg" alt="">
-              </div>
-              <div class="img_desc1">
-                <div class="img_desc_text"> <!-- 中央寄せのためのセレクタ -->
-                  <h2>創造力をかきたてるスペース</h2>
-                  <p>煮詰まったら1日オフサイトで気分を変えてみませんか？ひらめきが湧く環境で、チームの生産性を高めましょう。</p>
-                  <a href="https://www.airbnb.jp/s/all?refinement_paths%5B%5D=%2Fplaylists%2F1432&utm_source=airbnb&utm_medium=company_landing&utm_campaign=airbnb+work+landing+page+meetings+offsites">Wi-Fi完備の宿泊先を見る</a>
-                </div>
-              </div><!-- <div class="img_desc1"></div> -->
-            </div><!-- <div class="col-12 img_descs"></div> -->
-
-          </div><!-- div.img_desc -->
-        </div>
-      </div>
-
-      <!-- 概要説明 -->
-      <div class="container-fluid">
-        <div class="row descs d-flex justify-content-center">
-          <div class="col-lg-6">
-            <div class="desc_text text-left">
-              <h3>安全第一のシステム</h3>
-              <p>セキュアな支払いシステムから経験者のレビューまで、Airbnbは安全中心のシステムです。</p>
-              <a href="https://www.airbnb.jp/trust">もっと詳しく</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="desc_text text-left">
-              <h3>グローバルカスタマーサポート</h3>
-              <p>専門スタッフが、年中無休で営業時間内に11言語でサポートいたします。</p>
-              <a href="https://www.airbnb.jp/help/home">もっと詳しく</a>
-            </div>
           </div>
         </div>
       </div>
 
-      <!-- 事例MARTA KUTT様 -->
-      <div class="container-fluid">
-        <div class="row case1">
-          <!-- 画像＋説明１ -->
-          <div class="col-12 case1_descs">
-            <div class="case1_img mr-5">
-              <img src="src/case1.jpg" alt="">
-            </div>
-            <div class="case1_desc ml-5">
-              <div class="case1_desc_text"> <!-- 中央寄せのためのセレクタ -->
-                <h4>「Airbnbは自活できるのがいいですね。毎晩外食しなくても、みんなで好きなものを料理できるし、とても出張とは思えないほど現地に根を下ろせます」</h4>
-                <p><span>MARTA KUTT様</span><br>Transferwise社マネジャー</p>
-              </div>
-            </div>
+      <!-- フッター -->
+      <div class="container-fluid footer">
+        <div class="row">
+          <div class="col-12 footer_menu">
+            <ul class="footer_list">
+              <li>
+                <a href="">ホーム</a>
+              </li>
+              <li>
+                <a href="">ポッドキャスト</a>
+              </li>
+              <li>
+                <a href="">お問い合わせ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 logo_menu">
+            <ul class="logo_list">
+              <li><a href="https://frogagent.com/">
+                <img src="src/frog.svg" alt="" width="64" height="64">
+              </a></li>
+              <li><a href="https://frogagent.com/local-support/froghouse/">
+                <img src="src/house.svg" alt="" width="64" height="64">
+              </a></li>
+              <li><a href="https://school.frogagent.com/">
+                <img src="src/school.svg" alt="" width="64" height="64">
+              </a></li>
+            </ul>
+          </div>
+          <div class="col-12 copyright">
+            <p>© 2015 Frog Creator Production Inc.</p>
           </div>
         </div>
-      </div>
-
-      <!-- 働き方を変えたいなら、Airbnbです -->
-      <div class="container-fluid">
-        <form>
-          <div class="row">
-            <div class="col-12 form-group">
-              <h2>働き方を変えたいなら、Airbnbです</h2>
-              <div class="form_box">
-                <div class="input_box">
-                  <label>まずは仕事用メールアドレスの入力から</label>
-                  <input id="input exampleInputEmail1" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" autocomplete="off">
-                  <button id="submit" type="submit" class="btn btn-primary mb-2">メールアドレスを追加</button>
-                </div>
-                <div class="form_text">
-                  <h4>出張管理をご担当ですか？</h4>
-                  <p>こんなにある、Airbnbビジネスプログラム法人企業様のメリット。</p>
-                  <a href="https://www.airbnb.jp/companies">もっと詳しく</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <!-- リンク集 -->
-      <div class="container">
-        <div class="row links">
-          <div class="col-xl-3">
-            <p>企業情報</p>
-            <ul>
-              <li><a href="https://www.airbnb.jp/d/howairbnbworks">
-                Airbnbのご利用方法
-              </a></li>
-              <li><a href="https://www.airbnb.jp/press/news">
-                ニュースルーム
-              </a></li>
-              <li><a href="https://www.airbnb.jp/plus">
-                Airbnb Plus
-              </a></li>
-              <li><a href="https://www.airbnb.jp/luxury">
-                Airbnb Luxe
-              </a></li>
-              <li><a href="https://www.hoteltonight.com/?utm_source_name=Airbnb&utm_campaign_name=Dr_Us_Desktop_Airbnb_Footer">
-                HotelTonight
-              </a></li>
-              <li><a href="https://www.airbnb.jp/work?s=footer">
-                Airbnbビジネスプログラム
-              </a></li>
-              <li><a href="https://www.airbnb.jp/d/olympics">
-                オリンピック
-              </a></li>
-              <li><a href="https://www.airbnb.jp/careers">
-                採用情報
-              </a></li>
-            </ul>
-          </div>
-          <div class="col-xl-3">
-            <p>コミュニティ</p>
-            <ul>
-              <li><a href="https://www.airbnb.jp/diversity">
-                ダイバーシティ＆ビロンギング
-              </a></li>
-              <li><a href="https://www.airbnb.jp/accessibility">
-                アクセシビリティ対応
-              </a></li>
-              <li><a href="https://www.airbnb.jp/associates?from=footer">
-                Airbnbアソシエイト
-              </a></li>
-              <li><a href="https://www.airbnb.jp/invite?r=6">
-                お友達を招待
-              </a></li>
-            </ul>
-          </div>
-          <div class="col-xl-3">
-            <p>ホスト</p>
-            <ul>
-              <li><a href="https://www.airbnb.jp/host/homes?from_footer=1">
-                お部屋を掲載
-              </a></li>
-              <li><a href="https://www.airbnb.jp/d/onlinehost">
-                オンライン体験をホストする
-              </a></li>
-              <li><a href="https://www.airbnb.jp/host/experiences">
-                体験をホストする
-              </a></li>
-              <li><a href="https://www.airbnb.jp/host-message">
-                CEOブライアン・チェスキーからのメッセージ
-              </a></li>
-              <li><a href="https://www.airbnb.jp/help/responsible-hosting">
-                責任あるホスティング
-              </a></li>
-              <li><a href="https://www.airbnb.jp/openhomes?from_footer=1">
-                オープンホーム
-              </a></li>
-              <li><a href="https://www.airbnb.jp/resources">
-                リソースセンター
-              </a></li>
-              <li><a href="https://www.airbnb.jp/help/community?s=footer">
-                コミュニティセンター
-              </a></li>
-            </ul>
-          </div>
-          <div class="col-xl-3">
-            <p>サポート</p>
-            <ul>
-              <li><a href="https://www.airbnb.jp/covid">
-                新型コロナウイルスに関する最新情報
-              </a></li>
-              <li><a href="https://www.airbnb.jp/help?from=footer">
-                ヘルプセンター
-              </a></li>
-              <li><a href="https://www.airbnb.jp/help/article/2701/extenuating-circumstances-policy-and-the-coronavirus-covid19">
-                キャンセルオプション
-              </a></li>
-              <li><a href="https://www.airbnb.jp/neighbors">
-                近隣コミュニティサポート
-              </a></li>
-              <li><a href="https://www.airbnb.jp/trust">
-                信頼＆安全
-              </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <footer>
-          <a href="https://www.airbnb.jp/about/company-details">
-            Airbnb Global Services Limited<br>
-            観光庁長官(01)第S0001号(2018年6月15日-2023年6月14日)<br>
-          </a>
-          © 2020 Airbnb, Inc. All rights reserved·プライバシー·利用規約·サイトマップ·企業情報
-        </footer>
       </div>
     </section>
   <script src="js/common.js" type="text/javascript"></script>
