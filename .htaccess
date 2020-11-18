@@ -1,0 +1,5 @@
+DirectoryIndex index.html index.php
+AuthUserFile /app/.htpasswd
+AuthType Basic
+AuthName "Restricted Access"
+Require valid-user
