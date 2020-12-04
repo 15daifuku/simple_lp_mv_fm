@@ -88,13 +88,15 @@ html, body {
   div.logo_podcast {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     position: absolute;
     margin: 0 auto;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -20%);
+    top: 3%;
+    left: 3%;
+    transform: translate(-5%, -10%);
     padding: 20px;
-    height: 3 00px;
+    height: 100px;
+    width: 400px;
     z-index: 1;
   }
   
@@ -136,21 +138,26 @@ html, body {
   /* 画像内の埋め込みテキスト */
   div.contents {
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -40%);
     color: #ffffff;
-    width: 380px;
+    width: 360px;
     height: 600px;
     z-index: 1;
   }
   
   div.contents h2 {
+    font-weight: 600;
+    width: 200px;
+    margin: 0 auto;
     text-align: center;
+    line-height: 1.5;
   }
 
   div.contents h4 {
     margin-bottom: 10%;
+    line-height: 1.5;
   }
   
   div.contents a {
@@ -2113,6 +2120,7 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    text-align: center;
   }
   
   div.find_yourself_txt h2 {
@@ -2477,6 +2485,11 @@ html, body {
   div.form_group select.form-control {
     margin: 0 auto;
     width: 50%;
+  }
+
+  div.form_group textarea.form-control {
+    margin: 0 auto;
+    width: 800px;
   }
 
   div.form_group p {
