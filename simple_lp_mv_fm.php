@@ -1,0 +1,1 @@
+<?php header('Location: /simple_lp_mv_fm.html'); ?>

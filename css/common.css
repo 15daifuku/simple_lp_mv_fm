@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 
-html, body {
+html, b ody {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -51,6 +51,10 @@ html, body {
     color: #484848;
   }
   
+  div.col-md {
+    width: 360px;
+  }
+
   /* メイン画像 */
   /* 背景動画設定 */
     div.header {
