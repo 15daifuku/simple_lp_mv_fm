@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 
-html, b ody {
+html, body {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -52,7 +52,7 @@ html, b ody {
   }
   
   div.col-md {
-    width: 360px;
+    width: 340px;
   }
 
   /* メイン画像 */
@@ -146,7 +146,7 @@ html, b ody {
     left: 50%;
     transform: translate(-50%, -40%);
     color: #ffffff;
-    width: 360px;
+    width: 340px;
     height: 600px;
     z-index: 1;
   }
@@ -206,18 +206,28 @@ html, b ody {
     line-height: 1.8;
   }
   
+  div.course_desc {
+    text-align: center;
+    margin: 0 auto;
+  }
+
   div.course_desc img {
     object-fit: cover;
+  }
+
+  div.course_desc p {
+    text-align: left;
   }
   
   /* バンクーバーってどんな街？ */
   div.vancouver {
     position: relative;
     background: url("../src/vancouver.jpg");
-    min-width: 100%;
+    width: 360px;
     min-height: 100%;
     width: auto;
     height: 850px;
+    margin: 0 auto;
     margin-bottom: 5%;
   }
   
@@ -226,7 +236,7 @@ html, b ody {
     top: 15%;
     left: 50%;
     transform: translate(-50%, -20%);
-    width: 380px;
+    width: 340px;
     color: white;
   }
   
@@ -243,13 +253,10 @@ html, b ody {
   
     /* カリキュラム */
   div.curriculum {
+    width: 340px;
     margin: 0 auto;
   }
   
-  div.curriculum table {
-    width: 800px;
-  }
-
   div.curriculum h2 {
     font-weight: 600;
     margin-bottom: 40px;
@@ -285,7 +292,7 @@ html, b ody {
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 380px;
+    width: 340px;
     height: auto;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -311,7 +318,7 @@ html, b ody {
   
   /* コース内容 */
   div.course_details {
-    width: 380px;
+    width: 340px;
     height: auto;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -321,7 +328,6 @@ html, b ody {
     table-layout: auto;
     border-style: solid;
     border-color: #E5E5D1;
-    width: 380px;
   }
   
   div.course_details p {
@@ -339,7 +345,7 @@ html, b ody {
   
   /* 2週間のスケジュール */
   div.schedule_details {
-    width: 380px;
+    width: 340px;
     height: auto;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -354,7 +360,7 @@ html, b ody {
     border-style: solid;
     border-color: #E5E5D1;
     text-align: center;
-    width: 380px;
+    width: 340px;
     margin-bottom: 2%;
   }
   
@@ -369,7 +375,7 @@ html, b ody {
   
   /* 英会話講座 */
   div.en_course {
-    width: 380px;
+    width: 360px;
     margin: 0 auto;
     margin-bottom: 5%;
   }
@@ -379,10 +385,9 @@ html, b ody {
   }
 
   div.en_course_desc {
-    /* display: flex;
-    flex: nowrap; */
-    width: 100%;
+    width: 340px;
     height: auto;
+    margin: 0 auto;
     margin-bottom: 3%;
   }
   
@@ -419,7 +424,7 @@ html, b ody {
   div.find_yourself_txt {
     position: absolute;
     text-align: center;
-    width: 360px;
+    width: 340px;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -30%);
@@ -454,7 +459,7 @@ html, b ody {
   
   /* 受講者の声 */
   div.experiences {
-    width: 380px;
+    width: 360px;
     margin: 0 auto;
   }
   
@@ -496,16 +501,6 @@ html, b ody {
     background: #F8F7F2;
   }
   
-  div.experiences_text:before {
-    content: "";
-    position: absolute;
-    top: 10%;
-    left: -30px;
-    margin-top: -15px;
-    border: 15px solid transparent;
-    border-right: 15px solid #F8F7F2;
-  }
-  
   div.experiences_text p {
     margin: 1.5em 0 1.5em 15px;
   }
@@ -518,7 +513,7 @@ html, b ody {
   }
   
   div.teachers {
-    width: 380px;
+    width: 360px;
     margin: 0 auto;
   }
   
@@ -540,7 +535,7 @@ html, b ody {
   
   /* 受講までのステップ */
   div.steps {
-    width: 360px;
+    width: 340px;
     margin: 0 auto;
     margin-bottom: 50px;
   }
@@ -603,7 +598,7 @@ html, b ody {
   
   div.return_txt {
     position: absolute;
-    width: 360px;
+    width: 340px;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -40%);
@@ -637,7 +632,7 @@ html, b ody {
   
   /* これから必要とされるのは、グローバルに活躍できるあなた */
   div.global {
-    width: 380px;
+    width: 340px;
     margin: 0 auto;
     margin-bottom: 40px;
   }
@@ -680,7 +675,7 @@ html, b ody {
   }
   
   div.price_lists {
-    width: 380px;
+    width: 360px;
     margin: 0 auto;
   }
 
@@ -688,7 +683,7 @@ html, b ody {
     table-layout: fixed;
     border-style: solid;
     border-color: #E5E5D1;
-    width: 380px;
+    width: 340px;
     }
   
   div.price_list {
@@ -730,7 +725,7 @@ html, b ody {
   
   /* よくある質問 */
   div.faqs {
-    width: 380px;
+    width: 360px;
     margin: 0 auto;
     margin-bottom: 5%;
   }
@@ -757,18 +752,17 @@ html, b ody {
   /* お申し込み／お問い合わせ */
   div.req_inq {
     background-color: #F8F7F2;
-    padding-top: 5%;
-    margin-bottom: 40px;
+    padding: 10% 0;
   }
   
   div.req_inq_box {
-    width: 360px;
+    width: 340px;
     margin: 0 auto;
     padding-bottom: 5%;
   }
 
   div.input_group {
-    width: 360px;
+    width: 340px;
     text-align: center;
     margin: 0 auto;
   }
@@ -794,17 +788,17 @@ html, b ody {
 
   div.form_group input.form-control {
     margin: 0 auto;
-    width: 360px;
+    width: 340px;
   }
   
   div.form_group select.form-control {
     margin: 0 auto;
-    width: 360px;
+    width: 340px;
   }
 
   div.form_group textarea {
     margin: 0 auto;
-    width: 360px;
+    width: 340px;
   }
 
   div.form_group p {
@@ -814,7 +808,7 @@ html, b ody {
   div.input_group input.btn_square {
     display: inline-block;
     font-size: 24px;
-    width: 360px;
+    width: 340px;
     margin: 0 auto;
     padding: 0.5em 2em;
     text-decoration: none;
